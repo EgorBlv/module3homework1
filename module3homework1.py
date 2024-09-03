@@ -8,7 +8,9 @@ def string_info(string):
 
 def is_contains(string, list_to_search):
     count_calls()
-    return string in list_to_search
+    new_string = string.upper()
+    new_li = [x.upper() for x in list_to_search]
+    return new_string in new_li
 
 
 calls = 0
